@@ -8,7 +8,7 @@ export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
 export SELINUX_IGNORE_NEVERALLOWS=true
-ccache -M 10G
+ccache -M 80G
 ccache -o compression=true
 ccache -z
 
