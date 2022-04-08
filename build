@@ -33,6 +33,7 @@ make bootimage
 #	msg=$2	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=${your_telegram_id}"
 # }
 
+
 # id=#
 
 
