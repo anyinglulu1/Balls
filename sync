@@ -3,7 +3,7 @@
 mkdir -p /tmp/rom # Where to sync source
 cd /tmp/rom
 
- sudo apt-get neofetch
+ apt-get install neofetch
  neofetch
 
 # Repo init command
