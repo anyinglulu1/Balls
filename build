@@ -12,7 +12,8 @@ ccache -o compression=true
 ccache -z
 
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
-export ALLOW_MISSING_DEPENDECIES=true
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES= true 
+export ALLOW_MISSING_DEPENDECIES= true
 make sepolicy
 make init
 make bootimage
