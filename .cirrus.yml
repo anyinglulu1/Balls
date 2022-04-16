@@ -8,7 +8,7 @@ task:
     container:
       image: aarunalr/aosp-build
       cpu: 8
-      memory: 64g
+      memory: 32g
       commands:
       - sudo apt-get install gpg
       - sudo apt-get update
