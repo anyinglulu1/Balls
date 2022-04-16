@@ -7,15 +7,15 @@ lunch aosp_whyred-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 75G
+ccache -M 1000G
 ccache -o compression=true
 ccache -z
 
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES= true 
 export ALLOW_MISSING_DEPENDECIES= true
-sleep 3m
-make bacon
+
+make bacon -j8
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
 # up(){
 #	curl --upload-file $1 http://oshi.at/nossl
