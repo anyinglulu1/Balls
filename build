@@ -16,7 +16,7 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES= true
 export ALLOW_MISSING_DEPENDECIES= true
 
 make sepolicy
-mmma device/xiaomi/sdm660-common/overlay
+make bacon -j8
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
 # up(){
 #	curl --upload-file $1 http://oshi.at/nossl
