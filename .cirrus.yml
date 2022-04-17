@@ -4,10 +4,10 @@ env:
     #13
 task:
     name: Anyinglulu
-    timeout_in: 130m
+    timeout_in: 4h
     container:
       image: aarunalr/aosp-build
-      cpu: 16
+      cpu: 8
       memory: 32g
       commands:
       - sudo apt-get install gpg
