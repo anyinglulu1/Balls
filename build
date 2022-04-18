@@ -7,7 +7,7 @@ lunch aosp_whyred-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 1000G
+ccache -M 10G
 ccache -o compression=true
 ccache -z
 
@@ -15,6 +15,8 @@ ccache -z
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES= true 
 export ALLOW_MISSING_DEPENDECIES= true
 
+
+make clean
 make bootimage
 make init
 make sepolicy
