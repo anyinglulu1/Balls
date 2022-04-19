@@ -49,4 +49,3 @@ send_zip=$(up out/target/product/mido/lineage.*.zip) && tg $id "Build Succeed!
 $send_zip"
 fi
 ccache -s # Let's print ccache statistics finally
-
