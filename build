@@ -20,8 +20,6 @@ make clean
 make bootimage
 make init
 make sepolicy
-make vendor
-make bacon -j8
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
 # up(){
 #	curl --upload-file $1 http://oshi.at/nossl
