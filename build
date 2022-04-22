@@ -15,8 +15,6 @@ ccache -z
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES= true 
 export ALLOW_MISSING_DEPENDECIES= true
 
-
-make clean
 make bootimage
 make init
 make sepolicy
