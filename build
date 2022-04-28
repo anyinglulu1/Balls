@@ -3,7 +3,7 @@ cd /tmp/rom
 
 # Normal build steps
 source build/envsetup.sh
-lunch blaze_whyred-userdebug
+lunch aosp_whyred-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -16,7 +16,7 @@ export BUILD_BROKEN_MISSING_REQUIRED_MODULES= true
 export ALLOW_MISSING_DEPENDECIES= true
 export SELINUX_IGNORE_NEVERALLOWS= true
 
-brunch whyred
+m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
 # up(){
 #	curl --upload-file $1 http://oshi.at/nossl
