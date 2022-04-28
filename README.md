@@ -1,5 +1,6 @@
 
 Script for build rom
-Creadit
+Credit
 @apon77
 And other
+
