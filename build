@@ -12,11 +12,12 @@ ccache -o compression=true
 ccache -z
 
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
-export BUILD_BROKEN_MISSING_REQUIRED_MODULES= true 
-export ALLOW_MISSING_DEPENDECIES= true
-export SELINUX_IGNORE_NEVERALLOWS= true
 
-m aex
+make bootimage
+make init
+make sepolicy
+
+# m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
 # up(){
 #	curl --upload-file $1 http://oshi.at/nossl
