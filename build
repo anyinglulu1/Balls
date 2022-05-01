@@ -15,7 +15,7 @@ ccache -z
 export ALLOW_MISSING_DEPENDECIES= true
 export SELINUX_IGNORE_NEVERALLOWS= true
 
-make sepolicy
+mka bacon
 
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
@@ -37,6 +37,7 @@ make sepolicy
 
 
 # id=#
+
 
 
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
