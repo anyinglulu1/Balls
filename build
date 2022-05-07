@@ -18,9 +18,6 @@ export SELINUX_IGNORE_NEVERALLOWS= true
 make bootimage
 make init
 make sepolicy
-clear
-
-mka bacon
 
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
