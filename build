@@ -15,7 +15,10 @@ ccache -z
 export ALLOW_MISSING_DEPENDECIES= true
 export SELINUX_IGNORE_NEVERALLOWS= true
 
-mka bacon
+make bootimage
+make init
+make sepolicy
+# mka bacon
 
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
