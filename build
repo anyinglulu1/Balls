@@ -3,7 +3,7 @@ cd /tmp/rom
 
 # Normal build steps
 source build/envsetup.sh
-lunch lineage_whyred-userdebug
+lunch blaze_whyred-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -15,7 +15,9 @@ ccache -z
 export ALLOW_MISSING_DEPENDECIES= true
 export SELINUX_IGNORE_NEVERALLOWS= true
 
-make bacon
+make bootimage
+make sepolicy
+make init
 
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
