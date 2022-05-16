@@ -5,6 +5,7 @@ free -h
 
 apt install wget pigz
 
+snap list
 cd /tmp # Where to download cccahe
 
 #echo "|| Downloading CCACHE ||"
