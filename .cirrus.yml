@@ -15,7 +15,9 @@ task:
       - sudo apt-get upgrade
       - snap list
     download_ccache_background_script: # To download ccache in background
-      - bash download_ccache # Ccache download script
+      - bash download_ccache # Ccache download scrip
+    Test:
+      - bash Test
     sync_script: # To sync rom source and dt, vt, kernel etc.
       - bash sync # Sync script
     build_script: # To build rom
