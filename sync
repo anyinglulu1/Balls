@@ -14,3 +14,4 @@ git clone https://github.com/mvaisakh/gcc-arm64.git --depth=1 prebuilts/gcc/linu
 
 # Sync source with -q, no need unnecessary messages, you can remove -q if want! try with -j30 first, if fails, it will try again
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 30 || repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j 8
+
