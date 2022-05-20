@@ -3,7 +3,7 @@ cd /tmp/rom
 
 # Normal build steps
 source build/envsetup.sh
-lunch blaze_whyred-userdebug
+lunch lineage_whyred-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
