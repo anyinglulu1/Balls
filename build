@@ -7,15 +7,11 @@ lunch lineage_whyred-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
-ccache -M 30G
+ccache -M 60G
 ccache -o compression=true
 ccache -z
 
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
-
-make init
-make bootimage
-make sepolicy
 
 make bacon -j10
 # m aex
