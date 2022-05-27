@@ -6,7 +6,7 @@ task:
     name: Anyinglulu
     timeout_in: 10h
     container:
-      image: aarunalr/aosp-build
+      image: registry.gitlab.com/sushrut1101/docker:latest
       cpu: 8
       memory: 32g
       commands:
