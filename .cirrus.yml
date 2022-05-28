@@ -6,7 +6,7 @@ task:
     name: Anyinglulu
     timeout_in: 10h
     container:
-      image: registry.gitlab.com/sushrut1101/docker:latest
+      image: inok2341/anu:latest
       cpu: 8
       memory: 32g
       commands:
