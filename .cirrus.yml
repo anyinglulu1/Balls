@@ -6,7 +6,7 @@ task:
     name: Anyinglulu
     timeout_in: 10h
     container:
-      image: inok2341/anu:latest
+      image: registry.gitlab.com/sushrut1101/docker:latest
       cpu: 8
       memory: 32g
       commands:
@@ -14,6 +14,9 @@ task:
       - sudo apt-get update
       - sudo apt-get upgrade
       - sudo apt-get neofetch
+      - sudo swapoff -a
+      - sudo apt install zram-config
+      - sudo reboot
     download_ccache_background_script: # To download ccache in background
       - bash download_ccache # Ccache download scrip
     Test:
