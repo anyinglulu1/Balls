@@ -13,7 +13,8 @@ ccache -z
 
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
 
-make bacon 
+make init
+make sepolicy
 
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
