@@ -13,8 +13,7 @@ ccache -z
 
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
 
-make init
-make sepolicy
+make bacon -j8
 
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
@@ -45,8 +44,8 @@ make sepolicy
 
 
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
-if [ -e out/target/product/mido/lineage.*.zip ]; then
-send_zip=$(up out/target/product/mido/lineage.*.zip) && tg $id "Build Succeed!
+if [ -e out/target/product/whyred/lineage.*.zip ]; then
+send_zip=$(up out/target/product/whyref/lineage.*.zip) && tg $id "Build Succeed!
 $send_zip"
 fi
 ccache -s # Let's print ccache statistics finally
