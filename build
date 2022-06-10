@@ -10,7 +10,7 @@ export USE_CCACHE=1
 ccache -M 60G
 ccache -o compression=true
 ccache -z
-
+export TZ=Asia/Dhaka
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
 
 make bootimage
