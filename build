@@ -17,8 +17,6 @@ make clean
 make init
 make bootimage
 make sepolicy
-sleep 10s
-make bacon -j8
 
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
