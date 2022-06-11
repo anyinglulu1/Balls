@@ -12,10 +12,8 @@ ccache -o compression=true
 ccache -z
 export TZ=Asia/Dhaka
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
-
-make clean
-make bootimage
 make sepolicy
+make bootimage
 
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
@@ -34,7 +32,6 @@ make sepolicy
 #	your_telegram_id=$1
 #	msg=$2	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=${your_telegram_id}"
 # }
-
 
 
 
