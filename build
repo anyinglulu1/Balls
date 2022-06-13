@@ -1,5 +1,6 @@
 #!/bin/bash
 cd /tmp/rom
+sudo apt-get clean
 
 # Normal build steps
 source build/envsetup.sh
