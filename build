@@ -46,6 +46,7 @@ make bacon -j8
 if [ -e out/target/product/whyred/lineage.*.zip ]; then
 send_zip=$(up out/target/product/whyref/lineage.*.zip) && tg $id "Build Succeed!
 $send_zip"
+
 fi
 ccache -s # Let's print ccache statistics finally
 
