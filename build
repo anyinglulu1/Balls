@@ -31,6 +31,7 @@ make bacon -j8
 #	time rclone copy $1 apon:junk -P # apon is my rclone config name,
 #}
 
+
 # tg(){
 # 	bot_api=#134517345:AAGG7XkCQ1wSUEhl-gcXWc69KLttneMSt0c
 #	your_telegram_id=$1
