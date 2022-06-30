@@ -15,10 +15,7 @@ export TZ=Asia/Dhaka
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
 
 make clean 
-make init -j8
-make sepolicy -j8
-make bootimage -j8
-make bacon -j8
+make bacon
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
 # up(){
@@ -42,10 +39,10 @@ make bacon -j8
 # id=#
 
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
-if [ -e out/target/product/whyred/lineage.*.zip ]; then
-send_zip=$(up out/target/product/whyref/lineage.*.zip) && tg $id "Build Succeed!
-$send_zip"
+#if [ -e out/target/product/whyred/lineage.*.zip ]; then
+#send_zip=$(up out/target/product/whyref/lineage.*.zip) && tg $id "Build Succeed!
+#$send_zip"
 
-fi
-ccache -s # Let's print ccache statistics finally
+#fi
+#ccache -s # Let's print ccache statistics finally
 
