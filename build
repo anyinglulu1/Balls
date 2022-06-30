@@ -41,7 +41,6 @@ make bacon -j8
 
 # id=#
 
-
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
 if [ -e out/target/product/whyred/lineage.*.zip ]; then
 send_zip=$(up out/target/product/whyref/lineage.*.zip) && tg $id "Build Succeed!
