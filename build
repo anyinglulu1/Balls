@@ -35,7 +35,6 @@ make bacon
 #	msg=$2	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=${your_telegram_id}"
 # }
 
-
 # id=#
 
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
