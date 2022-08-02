@@ -4,7 +4,7 @@ sudo apt-get clean
 
 # Normal build steps
 source build/envsetup.sh
-lunch lineage_whyred-userdebug
+lunch bootleg_whyred-userdebug
 export CCACHE_DIR=/tmp/ccache
 export CCACHE_EXEC=$(which ccache)
 export USE_CCACHE=1
@@ -14,8 +14,9 @@ ccache -z
 export TZ=Asia/Dhaka
 #and dont use below codes for first 1 or 2 times, to get ccache uploaded,
 
-make sepolicy
-
+make sepolicy -j8
+make init -j8
+make bootimage -j8
 # m aex
 # upload function for uploading rom zip file! I don't want unwanted builds in my google drive haha!
 # up(){
