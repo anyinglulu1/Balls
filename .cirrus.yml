@@ -6,7 +6,7 @@ task:
     name: TeamNexus
     timeout_in: 120m
     container:
-      image: registry.gitlab.com/sushrut1101/docker:latest
+      dockerfile: Dockerfile
       cpu: 8
       memory: 32g
       commands:
