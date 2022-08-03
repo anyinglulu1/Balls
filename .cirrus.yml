@@ -3,8 +3,8 @@ env:
     CIRRUS_WORKING_DIR: "/tmp/ci"
     #13
 task:
-    name: Anyinglulu
-    timeout_in: 10h
+    name: TeamNexus
+    timeout_in: 120m
     container:
       image: registry.gitlab.com/sushrut1101/docker:latest
       cpu: 8
